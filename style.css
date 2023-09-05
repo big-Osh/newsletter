@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: oshh;
+}     
+@font-face {
+    font-family: osh;
+    src: url(assets/fonts/Roboto-Bold.ttf);
+}   
+@font-face {
+    font-family: oshh;
+    src: url(assets/fonts/Roboto-Regular.ttf);
+}                             
+.container{
+    height: 100vh;
+    width: 100%;
+    background-color: hsl(234, 29%, 20%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.small-container{
+    background-color: white;
+    border-radius: 20px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.row-1{
+     padding: 20px;
+}
+.row-1 h1{
+    font-size: 2.5em;
+    font-family: osh;
+    padding-bottom: 20px;
+} 
+.row .p{
+    font-size: 12px;
+    font-family: oshh;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.row .p img{
+   margin-right: 10px;
+}
+.pope{
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-family: oshh;
+}
+.row form input{
+    padding: 8px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 100%;
+    border: 1px solid hsl(231, 7%, 60%);
+    border-radius: 3px;
+    outline: none;
+}
+.row form button{
+    padding: 10px 30px;
+    width: 100%;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+}
+.row-2{
+    background: url(assets/images/illustration-sign-up-desktop.svg);
+    height: 350px;
+    width: 230px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 425px){
+    .small-container{
+        background-color: white;
+        height: 100vh;
+        width:  100%;
+        border-radius: 0;
+    }
+    .row:nth-child(1), .row:nth-child(2){
+        flex-direction: column-reverse;
+    }
+    .row{
+        padding: 0px;
+    }
+    .row-1{
+        padding: 0px;
+        margin-top: 30px;
+    }
+    .row-2{
+        background: url(assets/images/illustration-sign-up-mobile.svg);
+        height: 350px;
+        width: 400px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .row-1 h1{
+        font-size: 3em;
+        font-family: osh;
+        padding-bottom: 20px;
+    } 
+    .pope{
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+    .row .p{
+        font-size: 18px;
+    }
+    .pope{
+        font-size: 20px;
+    }
+    .pope br{
+        display: none;
+    }
+    .row form{
+        margin-top: 30px;
+    }
+    .row form input{
+        padding: 15px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        width: 100%;
+        border: 1px solid hsl(231, 7%, 60%);
+        border-radius: 3px;
+        outline: none;
+    }
+    .row form button{
+        padding: 15px 30px;
+        width: 100%;
+        border-radius: 3px;
+        outline: none;
+        border: none;
+        background-color: hsl(234, 29%, 20%);
+        color: white;
+    }
+}
+@media (max-width: 280px){
+    .row-1 h1{
+        font-size: 2.5em;
+        font-family: osh;
+        padding-bottom: 20px;
+    } 
+    .row-1 h1 br{
+        display: none;
+    } 
+}
